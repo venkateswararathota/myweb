@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     environment{
-        PATH = "/usr/bin/mvn:$PATH"
+        PATH = "/usr/share/apach-maven/bin:$PATH"
     }
     stages{
         stage("Git Checkout"){
