@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     environment{
-        PATH = "/usr/bin/mvn:$PATH"
+        PATH = "/usr/bin/mvn /opt/apache-maven-3.9.6/bin/mvn.cmd /opt/apache-maven-3.9.6/bin/:$PATH"
     }
     stages{
         stage("Git Checkout"){
