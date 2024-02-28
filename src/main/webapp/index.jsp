@@ -19,7 +19,4 @@
         <li><span class="team-name">Pavan</span></li>
         <li><span class="team-name">Suresh</span></li>
         <li><span class="team-name">Jagadeesh</span></li>
-        <li><span class="team-name">Vinay</span></li>
-    </ul>
-</body>
-</html>
+        <li><span class="team-name">Vinay</span>
