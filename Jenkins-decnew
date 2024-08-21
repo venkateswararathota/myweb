@@ -7,7 +7,8 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: '5f488d6b-fd5b-4a35-8b7c-18d1b11422c8', url: 'https://github.com/Pranaykumar-28/myweb.git'
+                git credentialsId: 'f12855a6-890f-4127-a58e-27753e3513c1', url: 'https://github.com/Pranaykumar-28/myweb.git'
+
             }
         }
         stage("Maven Build"){
@@ -18,7 +19,7 @@ pipeline{
         }
         stage("deploy"){
             steps{
-                sshagent(['28ee36bd-95c9-48fe-86d4-c63d25adb5e7']) {
+                sshagent(['e404f010-452a-4563-9790-5837a4f36ee2']) {
                 sh """
                     scp -o StrictHostKeyChecking=no target/myweb.war  ec2-user@10.1.1.33:/home/ec2-user/tomcat/webapps
                     
